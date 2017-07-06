@@ -30,11 +30,11 @@ export default class CreateCustomer extends Component {
       status: 'New Customer',
       log: ''
     }
-
+  this.props.createCustomer( customer );
   }
 
   render() {
-    const { first, last, email, phone } = this.state;
+    const { first, last, email, phone, createCustomer } = this.state;
 
     return (
       <div id="CreateCustomer__container">
